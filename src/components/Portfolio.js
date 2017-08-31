@@ -28,13 +28,6 @@ class Portfolio extends Component {
         sectionClass="projects"
         sectionHeading="My Projects"
         sectionContents={(
-          <div className="contents"></div>
-        )} />
-
-        <Section
-        sectionClass="contact"
-        sectionHeading="Contact Me"
-        sectionContents={(
           <div className="contents">
             <div className="container">
               <div className="row">
@@ -49,6 +42,14 @@ class Portfolio extends Component {
                 projectLink="https://mels065.github.io/react-calculator" />
               </div>
             </div>
+          </div>
+        )} />
+
+        <Section
+        sectionClass="contact"
+        sectionHeading="Contact Me"
+        sectionContents={(
+          <div className="contents">
           </div>
         )} />
       </div>
