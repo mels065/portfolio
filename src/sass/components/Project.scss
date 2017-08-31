@@ -1,0 +1,8 @@
+@import '../modules/variables';
+
+.Project {
+  width: $project-width;
+  img {
+    width: 100%;
+  }
+}

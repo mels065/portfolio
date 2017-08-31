@@ -2,6 +2,10 @@ import React, {Component} from 'react';
 import './stylesheet/Portfolio.css';
 
 import Section from './Section';
+import Project from './Project';
+
+import markdownRendererImg from './assets/markdown-renderer.png';
+import reactCalculatorImg from './assets/react-calculator.png';
 
 class Portfolio extends Component {
   render() {
@@ -16,7 +20,7 @@ class Portfolio extends Component {
           <div className="contents">
             <p>I am an enthusiastic front-end developer looking to challenge myself</p>
             <p>I am also looking to get into the backend interface of web development as
-            well, and will showcase my work on them in the future</p>
+            well, and will showcase my work on it in the future</p>
           </div>
         )} />
 
@@ -31,7 +35,21 @@ class Portfolio extends Component {
         sectionClass="contact"
         sectionHeading="Contact Me"
         sectionContents={(
-          <div className="contents"></div>
+          <div className="contents">
+            <div className="container">
+              <div className="row">
+                <Project
+                projectName="Markdown Renderer"
+                projectImg={markdownRendererImg}
+                projectLink="https://mels065.github.io/markdown" />
+
+                <Project
+                projectName="React Calculator"
+                projectImg={reactCalculatorImg}
+                projectLink="https://mels065.github.io/react-calculator" />
+              </div>
+            </div>
+          </div>
         )} />
       </div>
     );
