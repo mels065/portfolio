@@ -8,11 +8,4 @@ describe('Contact component', () => {
     const div = document.createElement('div');
     ReactDOM.render(<Contact contactIcon={font} />, div);
   });
-
-  it('crashes if icon is not given', () => {
-    const div = document.createElement('div');
-    expect(() => {
-      ReactDOM.render(<Contact />, div)
-    }).toThrow();
-  });
 });
