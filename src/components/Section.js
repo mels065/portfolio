@@ -4,7 +4,7 @@ import './stylesheet/Section.css';
 class Section extends Component {
   render() {
     return (
-      <section className={this.props.sectionClass}>
+      <section id={this.props.sectionId}>
         <h2>{this.props.sectionHeading}</h2>
         {this.props.sectionContents}
       </section>

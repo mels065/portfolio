@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
 import './stylesheet/Portfolio.css';
 
+import NavBar from './NavBar';
 import Section from './Section';
 import Skill from './Skill';
 import Project from './Project';
 import Contact from './Contact';
 
-import markdownRendererImg from './assets/markdown-renderer.png';
-import reactCalculatorImg from './assets/react-calculator.png';
+import markdownRendererImg from './assets/images/markdown-renderer.png';
+import reactCalculatorImg from './assets/images/react-calculator.png';
 
 // CONTACT ICONS
 import {wordpress} from 'react-icons-kit/icomoon/wordpress';
@@ -29,10 +30,19 @@ class Portfolio extends Component {
   render() {
     return (
       <div className="Portfolio">
-        <h1>Brandon Mellus</h1>
+        <NavBar
+          menuItems={[
+            "About",
+            "Skills",
+            "Projects",
+            "Contact"
+          ]} />
+        <header>
+          <h1>Brandon Mellus</h1>
+        </header>
 
         <Section
-        sectionClass="intro"
+        sectionId="About"
         sectionHeading="Who Am I?"
         sectionContents={(
           <div className="contents">
@@ -43,7 +53,7 @@ class Portfolio extends Component {
         )} />
 
         <Section
-        sectionClass="skills"
+        sectionId="Skills"
         sectionHeading="My Skills"
         sectionContents={(
           <div className="contents">
@@ -92,7 +102,7 @@ class Portfolio extends Component {
         )} />
 
         <Section
-        sectionClass="projects"
+        sectionId="Projects"
         sectionHeading="My Projects"
         sectionContents={(
           <div className="contents">
@@ -113,7 +123,7 @@ class Portfolio extends Component {
         )} />
 
         <Section
-        sectionClass="contact"
+        sectionId="Contact"
         sectionHeading="Contact Me"
         sectionContents={(
           <div className="contents">
@@ -140,6 +150,9 @@ class Portfolio extends Component {
             </div>
           </div>
         )} />
+      <footer>
+        <p className="copyright">Brandon Mellus &copy; (2017)</p>
+      </footer>
       </div>
     );
   }
