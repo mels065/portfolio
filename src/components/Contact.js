@@ -10,7 +10,7 @@ class Contact extends Component {
           <span>{getValidIcon(this.props.contactIcon)}</span>
         </a>
       </div>
-    )
+    );
   }
 }
 

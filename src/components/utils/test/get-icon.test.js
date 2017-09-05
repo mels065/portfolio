@@ -10,7 +10,7 @@ describe('getValidIcon(icon)', () => {
   });
 
   it('returns an i element with an img as a child if given a valid img path', () => {
-    expect(getValidIcon(path.join(__dirname, './assets/react.png')).type).toEqual(<i />.type);
+    expect(getValidIcon(path.join(__dirname, './assets/react.png')).type).toEqual(<img />.type);
   });
 
   it('returns an Icon component with an X icon if not given a valid input', () => {
