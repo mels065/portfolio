@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
 import './stylesheet/Skill.css';
-import {getValidIcon} from './utils/get-icon'
 
 class Skill extends Component {
   render() {
     return (
       <figure className="Skill">
-        <div>{getValidIcon(this.props.skillIcon)}</div>
+        <img src={this.props.skillImg} alt={this.props.skillName} />
         <figcaption>{this.props.skillName}</figcaption>
       </figure>
     );

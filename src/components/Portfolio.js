@@ -7,6 +7,18 @@ import Skill from './Skill';
 import Project from './Project';
 import Contact from './Contact';
 
+// SKILL IMGS
+import html5Img from './assets/images/skills/html5.png';
+import css3Img from './assets/images/skills/css3.png';
+import javascriptImg from './assets/images/skills/javascript.png';
+import reactImg from './assets/images/skills/react.png';
+import jqueryImg from './assets/images/skills/jquery.png';
+import sassImg from './assets/images/skills/sass.png';
+import gitImg from './assets/images/skills/git.png';
+import npmImg from './assets/images/skills/npm.png';
+import gulpImg from './assets/images/skills/gulp.png';
+
+// PROJECT IMGS
 import markdownRendererImg from './assets/images/markdown-renderer.png';
 import reactCalculatorImg from './assets/images/react-calculator.png';
 
@@ -16,15 +28,6 @@ import {twitter} from 'react-icons-kit/icomoon/twitter';
 import {linkedin} from 'react-icons-kit/icomoon/linkedin';
 import {github} from 'react-icons-kit/icomoon/github';
 import {mail2} from 'react-icons-kit/icomoon/mail2';
-
-// SKILL ICONS
-import {htmlFive} from 'react-icons-kit/icomoon/htmlFive';
-import {css3} from 'react-icons-kit/icomoon/css3';
-import {git} from 'react-icons-kit/icomoon/git';
-import {npm} from 'react-icons-kit/icomoon/npm'
-import jsIcon from './assets/icons/js-icon.png';
-import reactIcon from './assets/icons/react.png';
-import sassIcon from './assets/icons/sass.png';
 
 class Portfolio extends Component {
   render() {
@@ -57,45 +60,48 @@ class Portfolio extends Component {
         sectionHeading="My Skills"
         sectionContents={(
           <div className="contents">
-            <h3>Current Skills:</h3>
-            <div className="container">
+            <h3>Languages:</h3>
+            <div id="Languages" className="container">
               <div className="row">
                 <Skill
                   skillName="HTML5"
-                  skillIcon={htmlFive} />
+                  skillImg={html5Img} />
                 <Skill
                   skillName="CSS3"
-                  skillIcon={css3} />
+                  skillImg={css3Img} />
+                <Skill
+                  skillName="Sass"
+                  skillImg={sassImg} />
+              </div>
+              <div className="row">
                 <Skill
                   skillName="JavaScript (ES6 & below)"
-                  skillIcon={jsIcon} />
+                  skillImg={javascriptImg} />
               </div>
+            </div>
+            <h3>Libraries:</h3>
+            <div id="Libraries" className="container">
               <div className="row">
                 <Skill
                   skillName="React"
-                  skillIcon={reactIcon} />
+                  skillImg={reactImg} />
                 <Skill
-                  skillName="Sass"
-                  skillIcon={sassIcon} />
+                  skillName="jQuery"
+                  skillImg={jqueryImg} />
               </div>
             </div>
-            <h3>Version Control:</h3>
-            <div className="container">
+            <h3>Tools:</h3>
+            <div id="Tools" className="container">
               <div className="row">
                 <Skill
                   skillName="Git"
-                  skillIcon={git} />
-                <Skill
-                  skillName="GitHub"
-                  skillIcon={github} />
-              </div>
-            </div>
-            <h3>Package Management</h3>
-            <div className="container">
-              <div className="row">
-                <Skill
-                  skillName="npm"
-                  skillIcon={npm} />
+                  skillImg={gitImg} />
+                  <Skill
+                    skillName="npm"
+                    skillImg={npmImg} />
+                  <Skill
+                    skillName="gulp.js"
+                    skillImg={gulpImg} />
               </div>
             </div>
           </div>
