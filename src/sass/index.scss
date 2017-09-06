@@ -1,7 +1,15 @@
 @import './modules/variables';
 
 body {
+  background-color: $body-bg-color;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: $body-font-family;
+}
+
+h1  {
+  font-size: 96px;
+  &, h2, h3 {
+    font-family: $heading-font-family;
+  }
 }
