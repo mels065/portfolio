@@ -1,0 +1,21 @@
+section {
+  background-color: white;
+  border-radius: 5%;
+  padding: 20px;
+  margin: 50px auto;
+  width: 60%;
+  .row {
+    display: flex;
+    margin: {
+      top: 20px;
+      bottom: 20px;
+    }
+    justify-content: center;
+  }
+  h2 {
+    margin: {
+      top: 20px;
+      bottom: 20px;
+    }
+  }
+}

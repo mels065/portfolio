@@ -1,0 +1,26 @@
+@import '../modules/variables';
+
+header {
+  background-image: $header-bg-img;
+  color: white;
+  height: $header-height;
+  margin: {
+    bottom: $bottom-margin;
+  }
+  padding: {
+    top: 50px;
+  }
+  p {
+    font-size: 48px;
+  }
+}
+
+footer {
+  .copyright {
+    font-size: 12px;
+    text-align: right;
+    margin: {
+      right: 20px;
+    }
+  }
+}

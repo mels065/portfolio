@@ -42,6 +42,7 @@ class Portfolio extends Component {
           ]} />
         <header>
           <h1>Brandon Mellus</h1>
+          <p>Frontend Web Developer</p>
         </header>
 
         <Section

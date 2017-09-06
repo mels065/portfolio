@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-$body-bg-color: #333894;
 $body-margin: 0;
 $body-padding: 0;
 $body-font-family: 'Josefin Slab', serif;
 
+$app-bg-color: #4b7396;
+
 $heading-font-family: 'Raleway', sans-serif;
 
 $project-width: 400px;
+
+$header-bg-img: url('../assets/images/gears.jpeg');
+$header-height: 600px;
+
+$bottom-margin: 50px;

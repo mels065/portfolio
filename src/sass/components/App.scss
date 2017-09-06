@@ -1,6 +1,8 @@
+@import '../modules/variables';
+
 .App {
-  background-color: white;
+  background-color: $app-bg-color;
   margin: 0 auto;
   text-align: center;
-  width: 80%;
+  height: 100%;
 }

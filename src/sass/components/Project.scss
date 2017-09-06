@@ -1,8 +1,14 @@
 @import '../modules/variables';
 
 .Project {
+  border: 1px solid black;
   width: $project-width;
   img {
     width: 100%;
+  }
+  a {
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
   }
 }
