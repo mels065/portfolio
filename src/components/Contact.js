@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import './stylesheet/Contact.css';
-import {getValidIcon} from './utils/get-icon';
+import Icon from 'react-icons-kit';
 
 class Contact extends Component {
   render() {
     return (
       <div className="Contact">
         <a href={this.props.contactLink} target="_blank">
-          <span>{getValidIcon(this.props.contactIcon)}</span>
+          <span><Icon icon={this.props.contactIcon} /></span>
         </a>
       </div>
     );
