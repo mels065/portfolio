@@ -1,10 +1,11 @@
 {
   "main.css": "static/css/main.44776cd6.css",
   "main.css.map": "static/css/main.44776cd6.css.map",
-  "main.js": "static/js/main.2a2d8caf.js",
-  "main.js.map": "static/js/main.2a2d8caf.js.map",
+  "main.js": "static/js/main.7d08d202.js",
+  "main.js.map": "static/js/main.7d08d202.js.map",
   "static/media/gears.jpeg": "static/media/gears.65fb1997.jpeg",
   "static/media/jquery.png": "static/media/jquery.7d09100c.png",
   "static/media/markdown-renderer.png": "static/media/markdown-renderer.f68d203f.png",
+  "static/media/pomodoro-clock.png": "static/media/pomodoro-clock.cf1fd6bd.png",
   "static/media/react-calculator.png": "static/media/react-calculator.c21d077a.png"
 }
